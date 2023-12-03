@@ -299,6 +299,43 @@ body {
 
 /* =============== /Hero MENU STYLE =============== */
 
+/* =============== Benefits MENU STYLE =============== */
+
+.benefits {
+    padding: 96px 0;
+}
+
+.benefits-socials {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefits-list {
+    max-width: 100%;
+}
+
+.benefits-icons {
+    display: none;
+}
+
+.benefits-title {
+    font-family: 'Roboto', sans-serif;
+    color: var(--NAVY-BLUE, #2E2F42);
+    margin: 0px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+    letter-spacing: 0.4px;
+}
+
+.benefits-section {
+
+}
+
+/* =============== /Benefits MENU STYLE =============== */
+
 
 /* =============== /MOBILE MENU STYLE =============== */
 

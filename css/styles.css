@@ -116,11 +116,18 @@ body {
     position: fixed;
     top: 0;
     right: 0;
+    padding-left: 40px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     z-index: 99999999;
     width: 100%;
     height: 100%;
+    transform: translateX(100%);
+    transition: transform 250ms linear;
+}
+
+.mobile-menu-div.is-open {
+    transform: translateX(0%);
 }
 
 .mobile-menu-div-close-btn {
@@ -148,6 +155,10 @@ body {
 
 .mobile-menu-nav {
     margin-top: 80px;
+}
+
+.mobile-menu-item {
+
 }
 
 /* =============== /MOBILE MENU STYLE =============== */

@@ -35,7 +35,11 @@
           </li>
         </ul>
       </nav>
-      <button class="mobile-menu-open-btn" type="button">
+      <button
+       class="mobile-menu-open-btn js-open-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
         <svg class="mobile-menu-open-btn-icon" width="32" height="22" aria-label="open mobile menu icon">
           <use href="./images/icons.svg#icon-menu-hamburger"></use>
         </svg>
@@ -485,8 +489,8 @@
     </div> -->
 
     <!-- Mobile menu -->
-    <div class="mobile-menu-div">
-      <button class="mobile-menu-div-close-btn">
+    <div class="mobile-menu-div js-menu-container" id="mobile-menu">
+      <button class="mobile-menu-div-close-btn js-close-menu">
         <svg class="mobile-menu-div-close-btn-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>

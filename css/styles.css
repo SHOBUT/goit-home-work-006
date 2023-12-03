@@ -62,6 +62,8 @@ body {
 
 /* =============== /BASE STYLE =============== */
 
+
+/* =============== HEADER STYLE =============== */
 .header {
     padding: 24px 0;
 }
@@ -102,5 +104,45 @@ body {
 
 .header-div {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
+
+/* =============== /HEADER STYLE =============== */
+
+/* =============== MOBILE MENU STYLE =============== */
+
+.mobile-menu-div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    z-index: 99999999;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-menu-div-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #2E2F42;
+}
+
+.mobile-menu-div-close-btn-icon {
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* =============== /MOBILE MENU STYLE =============== */

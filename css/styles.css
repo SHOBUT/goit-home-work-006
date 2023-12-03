@@ -162,7 +162,7 @@ body {
 }
 
 .mobile-menu-item:not(:last-child) {
- margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .mobile-menu-item:last-child {
@@ -308,6 +308,7 @@ body {
 .benefits-socials {
     display: flex;
     flex-wrap: wrap;
+    gap: 72px;
 }
 
 .benefits-list {
@@ -319,9 +320,11 @@ body {
 }
 
 .benefits-title {
-    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--NAVY-BLUE, #2E2F42);
-    margin: 0px;
+    margin: 0 auto;
     margin-bottom: 8px;
     font-size: 20px;
     font-style: normal;
@@ -331,7 +334,13 @@ body {
 }
 
 .benefits-section {
-
+    max-width: 396px;
+    color: var(--SLATE, #434455);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
 }
 
 /* =============== /Benefits MENU STYLE =============== */

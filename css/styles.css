@@ -69,3 +69,29 @@ body {
 .address {
     display: none;
 }
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+
+.header-span {
+    color: #2e2f42;
+}
+
+.mobile-menu-open-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+}
+
+.mobile-menu-open-btn-icon {
+    stroke: #2E2F42;
+}

@@ -116,6 +116,7 @@ body {
     position: fixed;
     top: 0;
     right: 0;
+    background-color: #FFFFFF;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     z-index: 99999999;
     width: 100%;
@@ -143,6 +144,10 @@ body {
 .mobile-menu-div-close-btn-icon {
     fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-nav {
+    margin-top: 80px;
 }
 
 /* =============== /MOBILE MENU STYLE =============== */

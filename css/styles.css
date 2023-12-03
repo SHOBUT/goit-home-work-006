@@ -244,8 +244,10 @@ body {
     margin-bottom: 40px;
 }
 
+/* =============== /MOBILE MENU STYLE =============== */
 
-/* =============== Hero MENU STYLE =============== */
+
+/* =============== Hero STYLE =============== */
 
 .hero {
     max-width: 428px;
@@ -297,9 +299,9 @@ body {
     background-color: #404BBF;
     }
 
-/* =============== /Hero MENU STYLE =============== */
+/* =============== /Hero STYLE =============== */
 
-/* =============== Benefits MENU STYLE =============== */
+/* =============== Benefits STYLE =============== */
 
 .benefits {
     padding: 96px 0;
@@ -343,17 +345,106 @@ body {
     letter-spacing: 0.32px;
 }
 
-/* =============== /Benefits MENU STYLE =============== */
+/* =============== /Benefits STYLE =============== */
 
-/* =============== Intent MENU STYLE =============== */
+/* =============== Intent STYLE =============== */
 
 .intent {
     display: none;
 }
 
-/* =============== /Intent MENU STYLE =============== */
+/* =============== /Intent STYLE =============== */
 
-/* =============== /MOBILE MENU STYLE =============== */
+/* =============== Team STYLE =============== */
+
+.team {
+    background:#F4F4FD;
+    padding: 96px 0;
+}
+
+.team-title {
+    color: #2E2F42;
+    text-align: center;
+    margin-bottom: 72px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.team-socials {
+
+}
+
+.team-list {
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team-image {
+    margin: 0 auto;
+}
+
+.team-container {
+
+}
+
+.team-title-card {
+    color: #2E2F42;
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+}
+
+.team-section {
+    color: #434455;
+    margin: 0px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; 
+    letter-spacing: 0.32px;
+    padding-bottom: 8px;
+}
+
+.team-icons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 0;
+}
+
+.team-list-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.team-link-icon {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.team-icon {
+    fill: #f4f4fd;
+}
+
+/* =============== /Team STYLE =============== */
+
 
 @media screen and (min-width: 768px) {
     .container {

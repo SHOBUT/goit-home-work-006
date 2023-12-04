@@ -202,10 +202,18 @@ body {
     gap: 56px;
 }
 
+@media screen and (max-width: 400px) {
+    .mobile-socials-menu-list {
+        flex-wrap: wrap;
+        width: calc((100% - 8px) / 2);
+    }
+    .mobile-socials-list {
+    }
+}
+
 .mobile-socials-list {
     margin-top: 48px;
     display: flex;
-    gap: 24px;
     padding: 0;
 }
 
@@ -264,6 +272,15 @@ body {
     margin: 0 auto;
     padding: 112px 0;
 }
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px) {
+    .hero {
+      background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+        ), url("../images/images-index/bk/bk-hero-mobile@2x.jpg");
+    }
+  }
 
 .hero-title{
     margin: 0 auto;

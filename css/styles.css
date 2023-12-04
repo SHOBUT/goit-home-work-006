@@ -254,7 +254,7 @@ body {
     margin-bottom: 40px;
 }
 
-/* =============== /MOBILE MENU STYLE =============== */
+/* =============== MOBILE MENU STYLE =============== */
 
 
 /* =============== Hero STYLE =============== */
@@ -501,7 +501,7 @@ screen and (min-resolution: 2dppx) {
 .customers-icons {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 72px 16px;
     padding: 0;
     margin: 0;
 }
@@ -687,12 +687,12 @@ color: #404bbf;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 408px;
+    width: 100%;
     min-height: 584px;
     border-radius: 4px;
     background-color: var(--DAIRY, #FCFCFC);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 16px 16px;
     }
     .backdrop .id-hidden .modal{
     transform: translateY(-100%), translateX(-0%) scale(0.4);
@@ -885,8 +885,19 @@ color: #404bbf;
 
 /* =============== Tablet STYLE =============== */
 
+@media screen and (min-width: 428px) {
+    .modal {
+        width: 392px;
+    }
+}
 
 @media screen and (min-width: 768px) {
+
+    .modal {
+        width: 408px;
+        padding: 72px 24px 24px 24px;
+    }
+
     .container {
     max-width: 768px;
     }
@@ -986,12 +997,23 @@ color: #404bbf;
         ), url("../images/images-index/bk/bk-tablet.jpg");
         }
 
+        @media screen and (min-resolution: 192dpi) and (min-width: 768px),
+        screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 2dppx) {
+            .hero {
+              background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+                ), url("../images/images-index/bk/bk-tablet@2x.jpg");
+            }
+          }
+
         .hero-title{
             font-size: 56px;
             max-width: 496px;
             }
             .hero-button{
-            margin-top: 36px;
+            margin-top: px;
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             }
             .hero-button:hover{
@@ -1333,11 +1355,12 @@ color: #404bbf;
 
 /* =============== Desktope STYLE =============== */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
 
 
     .container {
         max-width: 1158px;
+        padding: 0 15px;
         }
     
         .mobile-menu-div {
@@ -1410,8 +1433,12 @@ color: #404bbf;
             .address{
             margin-left: auto;
             }
+            .address-list {
+                display: flex;
+                gap: 0 40px;
+            }
             .address-list-link:not(:last-child) {
-                margin-bottom: 12px;
+                margin: 0;
             }
             .address-link{
             font-weight: 400;
@@ -1428,12 +1455,25 @@ color: #404bbf;
     /* =============== Hero STYLE =============== */
     
             .hero {
-            max-width: 1158px;
+            max-width: 1440px;
             background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
             ), url("../images/images-index/bk/bk-hero.jpg");
+            padding: 188px 0;
+
             }
+
+            @media screen and (min-resolution: 192dpi) and (min-width: 768px),
+            screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 2dppx) {
+                .hero {
+                  background-image: linear-gradient(
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)
+                    ), url("../images/images-index/bk/bk-hero@2x.jpg");
+                }
+              }
     
             .hero-title{
                 font-size: 56px;
@@ -1486,6 +1526,10 @@ color: #404bbf;
         display: inline-block;
         margin: 0 auto;
         margin-bottom: 8px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2x;
+        letter-spacing: 0.4px;
     }
     
     .benefits-section {
@@ -1679,43 +1723,47 @@ color: #404bbf;
     .footer{
         background-color: #2e2f42;
         padding: 100px 0;
-        text-align: center;
+        }
+        .footer-container {
+        gap: 0;
         }
         .footer-span{
         color: #f4f4fd;
         }
         .footer-section{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
         line-height: 1.5;
         color: #F4F4FD;
         letter-spacing: 0.02em;
-        max-width: 268px;
-        margin: 0 auto;
-        text-align: left;
+        min-width: 264px;
         }
         .logo-footer{
+        font-family: 'Raleway', sans-serif;
         font-weight: 800;
         font-size: 18px;
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
-        display: flex;
+        margin-right: 76px;
+        display: inline-block;
         margin-bottom: 16px;
-        text-align: left;
         }
         .footer-container{
-        width: 1158px;
         display: flex;
-        flex-wrap: wrap;
-        gap: 72px 24px;
-        justify-content: flex-start;
-        padding: 0 16px;
-        }
-        .footer-container-social {
-            margin: 0;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        width: 1158px;
+        padding: 0 15px;
         }
         .footer-tx{
-        width: 264px;
+        text-align: left;
+        margin-right: 120px
+        }
+        .footer-container-social {
+
         }
         .footer-social-section{
         font-weight: 500;
@@ -1724,12 +1772,9 @@ color: #404bbf;
         letter-spacing: 0.02em;
         color: #FFFFFF;
         margin-bottom: 16px;
-        text-align: left;
         }
         .footer-social-icon{
         display: flex;
-        justify-content: center;
-        align-items: center;
         gap: 16px;
         }
         .footer-social-list{
@@ -1760,7 +1805,7 @@ color: #404bbf;
         margin: 0;
         }
         .footer-data{
-        margin: 0;
+        margin-left: 80px;
         }
         .footer-data-section{
         margin-bottom: 16px;
@@ -1769,15 +1814,13 @@ color: #404bbf;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #ffffff;
-        text-align: left;
         }
         .footer-data-form{
         display: flex;
         gap: 24px;
         }
         .footer-data-label{
-        display: flex;
-        align-items: center;
+        
         }
         .footer-data-input{
         width: 264px;
@@ -1793,10 +1836,9 @@ color: #404bbf;
         color: #ffffff;
         }
         .footer-data-button{
-        margin: 0;
         min-width: 165px;
         height: 40px;
-        display: inline-flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         font-family: 'Roboto', sans-serif;

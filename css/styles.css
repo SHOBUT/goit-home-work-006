@@ -68,12 +68,15 @@ body {
     padding: 24px 0;
 }
 
-.header-socials {
-    display: none;
-}
 
-.address {
-    display: none;
+@media screen and (max-width: 767px) {
+    .header-socials {
+        display: none;
+    }
+    
+    .address {
+        display: none;
+    }
 }
 
 .logo {
@@ -207,8 +210,6 @@ body {
         flex-wrap: wrap;
         width: calc((100% - 8px) / 2);
     }
-    .mobile-socials-list {
-    }
 }
 
 .mobile-socials-list {
@@ -273,7 +274,9 @@ body {
     padding: 112px 0;
 }
 
-@media screen and (min-resolution: 192dpi) and (max-width: 767px) {
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -641,7 +644,7 @@ color: #404bbf;
     color: #ffffff;
     }
     .footer-data-button{
-        margin-top: 16px;
+    margin-top: 16px;
     min-width: 165px;
     height: 40px;
     display: inline-flex;
@@ -877,9 +880,261 @@ color: #404bbf;
 
 /* =============== /Modal STYLE =============== */
 
+/* =============== Tablet STYLE =============== */
+
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 736px;
+    max-width: 768px;
     }
+
+    .mobile-menu-div {
+    display: none;
+    }
+
+    .mobile-menu-open-btn {
+    display: none;
+    }
+    .header{
+        padding: 0;
+        border-bottom: 1px solid #e7e9fc;
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+        }
+        .header-nav{
+        display: flex;
+        align-items: center;
+        }
+        .header-socials{
+        display: flex;
+        gap: 40px
+        }
+        .header-span{
+        color: #2e2f42;
+        }
+        .header-div{
+        display: flex;
+        align-items: center;
+        }
+        .logo{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4d5ae5;
+        margin-right: 120px;
+        display: inline-block;
+        }
+        .list-item{
+        display: block;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        padding: 24px 0;
+        position: relative;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .list-item.current::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: 4px;
+        background-color: #404bbf;
+        border-radius: 2px;
+        }
+        .list-item.current{
+        color: #404bbf;
+        }
+        .list-item:hover{
+        color: #404bbf;
+        }
+        .list-item:focus{
+        color: #404bbf;
+        }
+        .address{
+        margin-left: auto;
+        }
+        .address-list {
+            
+        }
+        .address-link{
+        font-weight: 400;
+        font-size: 12px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .address-link:hover{
+        color: #404bbf;
+        }
+        .address-link:focus{
+        color: #404bbf;
+        }
+
+/* =============== Hero STYLE =============== */
+
+        .hero {
+        max-width: 768px;
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+        ), url("../images/images-index/bk/bk-tablet.jpg");
+        }
+
+        .hero-title{
+            font-size: 56px;
+            max-width: 496px;
+            }
+            .hero-button{
+            margin-top: 36px;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            .hero-button:hover{
+            background-color: #404BBF;
+            }
+            .hero-button:focus{
+            background-color: #404BBF;
+            }
+
+ /* =============== /Hero STYLE =============== */
+
+  /* =============== Benefits STYLE =============== */
+
+  .benefits {
+    padding: 96px 0;
 }
+
+  .benefits-div {
+    max-width: 768px;
+}
+
+.benefits-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+}
+
+.benefits-list {
+    
+}
+
+.benefits-icons {
+    display: none;
+}
+
+.benefits-title {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+.benefits-section {
+    max-width: 356px;
+}
+
+  /* =============== /Benefits STYLE =============== */
+
+/* =============== Team STYLE =============== */
+
+.team {
+    background:#F4F4FD;
+    padding: 96px 0;
+}
+
+.team-title {
+    color: #2E2F42;
+    text-align: center;
+    margin-bottom: 72px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.team-socials {
+    margin: 0 auto;
+    max-width: 264px;
+}
+
+.team-list {
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team-list:not(:last-child) {
+    margin-bottom: 72px;
+}
+
+.team-image {
+    margin: 0 auto;
+}
+
+.team-container {
+    padding: 32px 0;
+    border-radius: 0px 0px 4px 4px;
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-title-card {
+    color: #2E2F42;
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+}
+
+.team-section {
+    color: #434455;
+    margin: 0px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; 
+    letter-spacing: 0.32px;
+    padding-bottom: 8px;
+}
+
+.team-icons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 0;
+}
+
+.team-list-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.team-link-icon {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.team-icon {
+    fill: #f4f4fd;
+}
+
+/* =============== /Team STYLE =============== */
+
+
+}
+
+/* =============== /Tablet STYLE =============== */

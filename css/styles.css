@@ -546,7 +546,7 @@ color: #404bbf;
     padding: 0 15px;
     }
     .footer-container-social {
-
+    margin-top: 72px;
     }
     .footer-tx{
 
@@ -593,7 +593,7 @@ color: #404bbf;
     margin: 0;
     }
     .footer-data{
-
+    margin-top: 72px;
     }
     .footer-data-section{
     margin-bottom: 16px;
@@ -624,6 +624,7 @@ color: #404bbf;
     color: #ffffff;
     }
     .footer-data-button{
+        margin-top: 16px;
     min-width: 165px;
     height: 40px;
     display: inline-flex;

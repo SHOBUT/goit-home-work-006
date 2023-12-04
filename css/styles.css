@@ -383,6 +383,10 @@ screen and (min-resolution: 2dppx) {
     padding: 96px 0;
 }
 
+.team-div {
+    width: 296px;
+}
+
 .team-title {
     color: #2E2F42;
     text-align: center;
@@ -1195,6 +1199,7 @@ color: #404bbf;
     letter-spacing: 0.02em;
     max-width: 268px;
     margin: 0 auto;
+    text-align: left;
     }
     .logo-footer{
     font-weight: 800;
@@ -1203,12 +1208,14 @@ color: #404bbf;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    display: inline-block;
+    display: flex;
     margin-bottom: 16px;
+    text-align: left;
     }
     .footer-container{
     width: 584px;
     display: flex;
+    flex-wrap: wrap;
     gap: 72px 24px;
     justify-content: flex-start;
     padding: 0 16px;
@@ -1217,7 +1224,7 @@ color: #404bbf;
         margin: 0;
     }
     .footer-tx{
-
+    width: 264px;
     }
     .footer-social-section{
     font-weight: 500;
@@ -1226,6 +1233,7 @@ color: #404bbf;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
+    text-align: left;
     }
     .footer-social-icon{
     display: flex;
@@ -1274,10 +1282,11 @@ color: #404bbf;
     }
     .footer-data-form{
     display: flex;
-    margin: 0 auto;
+    gap: 24px;
     }
     .footer-data-label{
-    display: block;
+    display: flex;
+    align-items: center;
     }
     .footer-data-input{
     width: 264px;
@@ -1293,7 +1302,7 @@ color: #404bbf;
     color: #ffffff;
     }
     .footer-data-button{
-    margin-top: 16px;
+    margin: 0;
     min-width: 165px;
     height: 40px;
     display: inline-flex;
